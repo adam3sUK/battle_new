@@ -4,6 +4,11 @@ source "https://rubygems.org"
   gem "capybara"
   gem "selenium-webdriver"
   gem 'rack'
+  gem "thin"
+  gem "puma"
+  gem 'reel'
+  gem "http"
+  gem 'webrick'
 
 ruby '3.0.2'
 

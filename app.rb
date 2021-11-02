@@ -3,8 +3,12 @@ require "sinatra/reloader"
 
 class Battle < Sinatra::Base
 
+  configure :development do
+    register Sinatra::Reloader
+  end
+
 get '/' do
-  "Hello World"
+  "Hello Battle"
 end
 
 end
