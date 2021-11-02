@@ -3,6 +3,7 @@
 source "https://rubygems.org"
   gem "capybara"
   gem "selenium-webdriver"
+  gem 'rack'
 
 ruby '3.0.2'
 
