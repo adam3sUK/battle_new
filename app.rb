@@ -22,8 +22,8 @@ get '/play' do
   @player_1 = $player_one.name
   @player_2 = $player_two.name
 
-  @p1_hp = 50
-  @p2_hp = 50
+  @p1_hp = $player_one.hp
+  @p2_hp = $player_two.hp
 
   erb(:play)
 end
@@ -32,6 +32,8 @@ get '/attack' do
   @player_1 = $player_one.name
   @player_2 = $player_two.name
 
+  $player_two.attacked
+  
   erb(:attack)
 end
 
