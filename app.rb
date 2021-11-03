@@ -20,6 +20,10 @@ end
 get '/play' do
   @player_1 = session[:player_1]
   @player_2 = session[:player_2]
+
+  @p1_hp = 50
+  @p2_hp = 50
+
   erb(:play)
 end
 
