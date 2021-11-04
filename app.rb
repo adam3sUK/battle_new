@@ -27,7 +27,7 @@ end
 
 get '/attack' do
   @game = $game
-  @game.attack(@game.player_2)
+  @game.attack(@game.active_player)
   erb(:attack)
 end
 
